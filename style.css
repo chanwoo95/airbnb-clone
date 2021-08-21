@@ -1,4 +1,93 @@
-.logo {
-  width: 4.2m;
-  height: 2.4em;
+:root {
+  --font-micro: 1rem;
+  --font-small: 1.2em;
+  --font-medium: 1.8rem;
+  --font-large: 2.8rem;
+
+  --color-black: #222222;
+  --color-white: #ffffff;
+  --color-lightgrey: #f7f7f7;
+  --color-pink: #fe385d;
+  --color-lightpink: #e54763;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em;
+  margin: 0 7.2em;
+}
+
+.top__logo {
+  font-size: var(--font-medium);
+}
+
+.fa-airbnb,
+.logo__name {
+  color: var(--color-lightpink);
+}
+
+.logo__name {
+  font-weight: 600;
+}
+
+.top__date__button,
+.top__host,
+.fa-globe,
+.fa-bars {
+  font-size: var(--font-micro);
+}
+
+.fa-user-circle {
+  font-size: var(--font-medium);
+}
+
+.top__date__button {
+  padding: 0.8em;
+}
+
+.top__hostAndLogin {
+  display: flex;
+}
+
+.top__login {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 0.5em;
+  margin-left: 0.4em;
+}
+
+.fa-bars,
+fa-user-circle {
+  margin: 0 0.6em;
+}
+
+.title {
+  font-size: var(--font-medium);
 }
