@@ -22,6 +22,7 @@ body {
 header {
   background: url("/img/home.jpg") center/cover;
   height: 700px;
+  padding: 1.2em 0;
 }
 
 button {
@@ -41,10 +42,8 @@ a {
 
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.4em;
-  margin: 0 7.2em;
+  padding: 0em 40px;
 }
 
 .top__logo {
@@ -74,6 +73,10 @@ a {
 
 .top__date__button {
   padding: 0.8em;
+}
+
+.top__date__button:hover {
+  color: lightgrey;
 }
 
 .top__hostAndLogin {
@@ -108,10 +111,23 @@ fa-user-circle {
 /* 완성 후 수정요망 */
 
 .home__search--button {
-  font-size: var(--font-small);
+  font-size: var(--font-micro);
   background-color: var(--color-white);
-  padding: 1.2em;
-  border-radius: 30px;
+  font-weight: bold;
+  padding: 0.4em 3.2em;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.2s;
+}
+
+.home__search--button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px;
+}
+
+.search {
+  background: linear-gradient(to right top, #861657, #ffa69e);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .title {
