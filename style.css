@@ -32,6 +32,11 @@ button {
   cursor: pointer;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -230,4 +235,27 @@ section {
   top: 0;
   left: 0;
   color: var(--color-white);
+}
+
+.look__around {
+  padding: 0 80px;
+}
+
+.experience {
+  display: flex;
+}
+
+.experience__img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.experience__description--title {
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+.title__description {
+  font-size: 14px;
 }
