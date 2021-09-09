@@ -259,3 +259,13 @@ section {
 .title__description {
   font-size: 14px;
 }
+
+footer {
+  background-color: var(--color-grey);
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__title {
+  padding: 10px 0px;
+}
