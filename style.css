@@ -51,10 +51,25 @@ a {
 }
 
 .header__container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0em 40px;
+}
+
+.header__container.scroll {
+  background-color: white;
+}
+
+.header__container.scroll > .top__hostAndLogin > .top__host {
+  color: black;
+}
+
+.header__container.scroll > .top__hostAndLogin > .top__globe > .fa-globe {
+  color: black;
 }
 
 .top__logo {
