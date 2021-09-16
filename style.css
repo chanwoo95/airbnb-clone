@@ -91,6 +91,10 @@ a {
   padding: 0.8em;
 }
 
+.top__date__button.active {
+  border-bottom: 2px solid var(--color-white);
+}
+
 .top__date__button:hover {
   color: lightgrey;
 }
@@ -102,15 +106,60 @@ a {
 .top__login {
   display: flex;
   align-items: center;
-  border: 1px solid black;
   border-radius: 40px;
   padding: 0.5em;
   margin-left: 0.4em;
+  background-color: var(--color-white);
 }
 
 .fa-bars,
 fa-user-circle {
   margin: 0 0.6em;
+  color: var(--color-grey);
+}
+
+.search__container {
+  display: flex;
+  justify-content: center;
+}
+
+.header__search {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 50%;
+  background-color: var(--color-white);
+  border-radius: 32px;
+  margin-top: 40px;
+}
+
+.search__box {
+  padding: 10px 5%;
+}
+
+.search__box--input {
+  border: none;
+  outline: 0;
+}
+
+.search__bar {
+  position: relative;
+  width: 1px;
+  height: 30px;
+  top: 14px;
+  background-color: var(--color-grey);
+}
+
+.search__box.guest {
+  display: flex;
+}
+
+.search__box--button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #ff385c;
+  border-radius: 50%;
+  color: var(--color-white);
 }
 
 /* 완성 후 수정요망 */
